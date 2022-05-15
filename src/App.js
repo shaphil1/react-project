@@ -57,7 +57,8 @@ function App() {
               </div>
             </div> 
             <button disabled={disable} onClick={()=>{
-              console.log(disable)
+
+              // console.log(disable)
               // setDisable(false);
               axios.get('https://codingapple1.github.io/shop/data2.json').then((result)=>{
                 
@@ -67,7 +68,7 @@ function App() {
               .catch(()=>{
                 console.log('실패')
               })
-              setdataCount(dataCount+1)
+              setdataCount(dataCount+1);
               console.log(dataCount)
               if( dataCount == 1 ){
                 axios.get('https://codingapple1.github.io/shop/data3.json').then((result)=>{
